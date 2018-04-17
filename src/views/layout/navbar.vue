@@ -47,6 +47,11 @@
             </el-dropdown-menu>
           </el-dropdown>
         </el-menu-item>
+        
+        <el-menu-item class="site-topbar__avatar nav-theme-switch" index="1-3">
+          <theme-picker></theme-picker>
+        </el-menu-item>
+
       </el-menu>
     </div>
     <!-- 弹窗, 修改密码 -->
@@ -58,6 +63,8 @@
   import UpdatePassword from './update-password'
   import API from '@/api'
   import { mapMutations } from 'vuex'
+  import ThemePicker from './theme-picker.vue'
+
   export default {
     data () {
       return {
@@ -65,6 +72,7 @@
       }
     },
     components: {
+      ThemePicker,
       UpdatePassword
     },
     computed: {
