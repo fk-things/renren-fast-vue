@@ -9,6 +9,7 @@ import * as schedule from './modules/schedule'
 import * as dept from './modules/dept'
 import * as bsproduct from './modules/bsproduct'
 import * as bsarea from './modules/bsarea'
+import * as goods from './modules/goods'
 
 export default {
   common,     // 公共
@@ -21,5 +22,6 @@ export default {
   dept,       // 部门
   bsproduct,  // 产品
   schedule,   // 定时任务
-  bsarea      // 地区
+  bsarea,     // 地区
+  goods       // 产品
 }

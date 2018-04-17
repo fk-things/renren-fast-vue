@@ -34,7 +34,9 @@ export default new Router({
         { path: '/log', component: _import('log/index'), name: 'log', desc: '系统日志', meta: { isTab: true } },
         { path: '/n/bsproduct', component: _import('bsproduct/index'), name: 'bsproduct', desc: '产品', meta: { isTab: true } },
         { path: '/n/dept', component: _import('dept/index'), name: 'dept', desc: '部门管理', meta: { isTab: true } },
-        { path: '/n/bsarea', component: _import('bsarea/index'), name: 'bsarea', desc: '地区管理', meta: { isTab: true } }],
+        { path: '/n/bsarea', component: _import('bsarea/index'), name: 'bsarea', desc: '地区管理', meta: { isTab: true } },
+        { path: '/n/goods', component: _import('goods/index'), name: 'goods', desc: '热门产品', meta: { isTab: true } }
+      ],
       beforeEnter (to, from, next) {
         let token = Vue.cookie.get('token')
         if (!token || !/\S/.test(token)) {
